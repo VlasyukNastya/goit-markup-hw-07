@@ -1,0 +1,23 @@
+@media screen and (min-width: 426px) {
+    .container {
+        width: 426px;
+    }
+
+    .header-logo {
+        margin-right: auto;
+    }
+
+    .menu-soc-list {
+        gap: 64px;
+    }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+        background-image: var(--background-gradient),
+        url('../images/MobailBackground2x.jpg');
+  }
+
+}

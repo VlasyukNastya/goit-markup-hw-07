@@ -1,0 +1,100 @@
+@media screen and (min-width: 1158px) {
+    .container {
+        width: 1158px;
+    }
+
+    .header-logo {
+        margin-right: 76px;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .header-list {
+        display: flex;
+        gap: 40px;
+    }
+
+    .header-main {
+        display: flex;
+    }
+    .header-link {
+        display: block;
+        position: relative;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        transition: var(--transition);
+        color: var(--color-header-link);
+    }
+
+    .header-link.current {
+        color: var(--selection-header);
+    }
+      
+    .current::after {
+        position: absolute; 
+        display: block;
+        content: "";
+        width: 100%;
+        height: 4px;
+        top: 45px;
+        left: 0;
+        bottom: 0;
+        background-color: var(--selection-header);
+        border-radius: 2px;
+    }
+      
+    .header-link:hover, 
+    .header-link:focus {
+        color:var(--selection-header);
+    }
+
+    .address-list {
+        display: flex;
+        gap: 40px;
+    }
+
+    .contacts {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        transition: var(--transition);
+        color: var(--color-contacts);
+    }
+
+    .contacts:hover,
+    .contacts:focus {
+        color: var(--selection-header);
+    }
+
+    .hero {
+        padding: 188px 0 188px;
+        background-image: var(--background-gradient)
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+        background-image: var(--background-gradient),
+        url('../images/BackgroundPhoto2x.jpg');} 
+   }
+
+
+    .title {
+        margin-bottom: 48px;
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+    }
+
+    .button-hero:hover,
+    .button-hero:focus {
+      background-color: var(--selection-bttn-hero);
+    }
+}

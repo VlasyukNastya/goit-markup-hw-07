@@ -1,4 +1,4 @@
-body {
+/** body {
   font-family: 'Roboto',sans-serif;
   color: #434455;
   }
@@ -76,11 +76,10 @@ img {
 }
 
 .container {
-  max-width: 100%;
+  width: 1158px;
   padding-right: 15px;
   padding-left: 15px;
-  margin: 0 auto;
- }
+  margin: 0 auto;}
 
 .visually-hidden {
   position: absolute;
@@ -97,6 +96,26 @@ img {
 
 
 /*Header CSS*/
+
+/**.header-website {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #E7E9FC;
+}
+
+.header-main {
+  display: flex;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.header-logo {
+  margin-right: 76px;
+}
 
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -116,167 +135,96 @@ img {
   color: #F4F4FD;
 }
 
-.header-list {
-  display: none;
-}
-
-.header-website {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  margin: 0 auto;
-  border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-
-.header-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.menu-btn {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  line-height: 0;
-}
-
-.menu-container {
-  display: flex;
-  position: fixed;
-  transition: opacity 300ms linear, visibility 300ms linear;}
-
-.mobile-menu {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  background-color: #ffffff;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-
-.mobile-menu-icon {
-  fill: #2E2F42;
-}
-
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.menu-container.is-hidden {
-  box-shadow: none;
-  transform: translate(-50%, 100%) scale(0);
-}
-
 .list {
   list-style: none;
 }
 
-.mobile-menu-list{
+.header-list {
   display: flex;
-  flex-direction: column;
   gap: 40px;
-  margin-bottom: px;
 }
 
-.mobile-menu-link {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
+.header-link {
+  display: block;
+  position: relative;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   transition: var(--transition);
   color: var(--color-header-link);
 }
 
-.mobile-menu-link:hover {
-  color:var(--selection-header);
-}
-
-.address-list {
-  display: none;
-} 
-
-.mobile-menu-address-list {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  margin-bottom: 48px;
-}
-
-.mobile-menu-tel {
-  font-family: 'Roboto';
-  font-style: normal; 
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  transition: var(--transition);
-  color: var(--color-header-link);
-}
-
-.mobile-menu-tel:hover {
+.header-link.current {
   color: var(--selection-header);
 }
 
-.mobile-menu-email {
-  font-family: 'Roboto';
+.current::after {
+  position: absolute; 
+  display: block;
+  content: "";
+  width: 100%;
+  height: 4px;
+  top: 45px;
+  left: 0;
+  bottom: 0;
+  background-color: var(--selection-header);
+  border-radius: 2px;
+}
+
+.header-link:hover, 
+.header-link:focus {
+  color:var(--selection-header);
+}
+
+.address {
   font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1,2px;
+}
+
+.address-list {
+  display: flex;
+  gap: 40px;
+}
+
+.contacts {
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  transition: var(--transition);
+  color: var(--color-contacts);
+  
 }
-
-.menu-soc-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 34px;
-}
-
-.menu-soc-link {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: var(--icon-soc-team);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.contacts:hover,
+.contacts:focus {
+  color: var(--selection-header);
 }
 
 /*------Section Hero------*/
 
-.hero {
-  padding: 112px 0 112px;
+/**.hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
+  max-width: 1440px;
   margin: 0 auto;
-  background-image: var(--background-gradient),
-  url(../images/MobailBackground.jpg);
   background-color: var(--bg-color);
-  background-size: 428px 432px;
+  background-image: var(--background-gradient),
+  url(../images/BackgroundPhoto.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-
-
 .title {
   font-weight: 700;
-  font-size: 32px;
-  max-width: 320px;
-  line-height: 1.11;
+  font-size: 56px;
+  max-width: 496px;
+  line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--hero-title-color);
   text-align: center;
   margin: 0 auto;
   white-space:pre-line;
-  margin-bottom: 72px;
+  margin-bottom: 48px;
 }
 
 .button-hero {
@@ -299,9 +247,14 @@ img {
   transition: var(--transition);
 }
 
+.button-hero:hover,
+.button-hero:focus {
+  background-color: var(--selection-bttn-hero);
+}
+
 /*------Section Information------*/ 
 
-/*.information {
+/**.information {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -345,7 +298,7 @@ img {
 
 /*------Section Company Work------*/
 
-.company-work {
+/**.company-work {
   padding-bottom: 120px;
 }
 
@@ -373,7 +326,7 @@ img {
 
 /*------Section Team------*/
 
-.team {
+/**.team {
   padding-top: 120px;
   padding-bottom: 120px;
   background-color: var(--bg-second-color);
@@ -456,7 +409,7 @@ img {
 
 /*------Customers------*/
 
-.customers {
+/**.customers {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -504,7 +457,7 @@ img {
 
 /*------Portfolio Nav------*/
 
-.portfolio {
+/**.portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
 }
@@ -541,7 +494,7 @@ img {
 
 /*Portfolio Cards*/
 
-.list-card {
+/**.list-card {
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
@@ -607,7 +560,7 @@ img {
 
 /*------Footer------*/
 
-.footer-website {
+/**.footer-website {
   padding-top: 100px;
   padding-bottom: 100px;
   margin-right: auto;
@@ -701,6 +654,8 @@ img {
 .subscribe-button {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
+  min-width: 169px;
+  height: 56px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -729,7 +684,7 @@ img {
 
 /**/
 
-.backdrop {
+/**.backdrop {
   display: flex;
   position: fixed;
   top: 0;
@@ -756,12 +711,12 @@ img {
   border-radius: 4px;
 }
 
-/*.is-hidden {
+.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
-*/
+
 .backdrop.is-hidden .modal {
   transform:  translate(-50%,-50%)  translateY(-100%);
 }
@@ -945,4 +900,4 @@ img {
 .modal-button:hover,
 .modal-button:focus {
   background-color: var(--selection-bttn-hero);
-}
+} 
