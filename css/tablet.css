@@ -2,12 +2,17 @@
     .container {
         width: 734px;
     }
+    /**-----------HEADER-------------**/
+    .header-main {
+        display: flex;
+        justify-content: space-between;
+    }
 
     .header-logo {
         margin-right: 120px;
     }
 
-    .menu-toggle {
+    .menu-btn {
         display: none;
     }
 
@@ -16,9 +21,6 @@
         gap: 40px;
     }
 
-    .header-main {
-        display: flex;
-    }
     .header-link {
         display: block;
         position: relative;
@@ -71,6 +73,8 @@
         color: var(--selection-header);
     }
 
+    /**-----------HERO-------------**/
+
     .hero {
         background-image: var(--background-gradient),
         url(../images/TabletBackground.jpg);
@@ -83,9 +87,8 @@
         .hero {
             background-image: var(--background-gradient),
             url('../images/TabletBackground2x.jpg');
-  }
-
-}
+        }
+    }
 
     .title {
         margin-bottom: 40px;
@@ -98,5 +101,81 @@
     .button-hero:focus {
       background-color: var(--selection-bttn-hero);
     }
+
+    /**-----------MODAL-------------**/
+
+    .modal {
+        top: 50%;
+        left: 50%;
+    }
+
+    /**-----------INFO-------------**/
+
+    .info-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+    .item-info {
+        flex-basis: calc((100% - 24px) / 2);
+    }
+
+    .info-caption {
+        text-align: start;
+    }
+    
+    /**-----------TEAM-------------**/
+
+    .team-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 64px;
+        align-items: center;
+        justify-content: center
+    }
+
+    .team-list {
+        flex-basis: calc((100% - 24px) / 2);
+    }
+
+    /**-----------CUSTOMERS-------------**/  
+
+    .customers-icon-item {
+        width: 190px;
+    }
+
+    /**-----------FOOTER-------------**/ 
+
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+        align-items: flex-start;
+        padding-left: 60px;
+    }
+
+    .logo-footer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .footer-title {
+        justify-content: flex-start
+    }
+
+    .footer-form {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-left: auto;
+    }
+
 
 }
