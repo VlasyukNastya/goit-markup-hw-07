@@ -147,8 +147,6 @@ img {
 } 
 
 .menu-container {
-  display: flex;
-  position: fixed;
   transition: opacity 300ms linear, visibility 300ms linear;}
 
 .mobile-menu {
