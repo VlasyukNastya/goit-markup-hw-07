@@ -1,6 +1,6 @@
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1200px) {
     .container {
-        width: 1158px;
+        max-width: 1158px;
     }
 
     .header-logo {
@@ -81,9 +81,11 @@
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .hero {
-        background-image: var(--background-gradient),
-        url('../images/BackgroundPhoto2x.jpg');} 
+        .hero {
+            background-image: var(--background-gradient),
+            url('../images/BackgroundPhoto2x.jpg');
+      }
+    
    }
 
 
