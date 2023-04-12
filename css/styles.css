@@ -201,6 +201,11 @@ img {
   color: var(--color-header-link);
 }
 
+.mobile-menu-link.current-mobile-menu {
+  color: var(--selection-header);
+}
+
+
 .mobile-menu-address-list {
   display: flex;
   flex-direction: column;
@@ -455,16 +460,16 @@ img {
 
 /*------Portfolio Nav------*/
 
-/*.portfolio {
+.portfolio {
   padding-top: 96px;
-  padding-bottom: 120px;
+  padding-bottom: 48px;
 }
 
 .list-button {
   display: flex;
   gap: 24px;
   margin-bottom: 72px;
-  justify-content: center;
+  flex-wrap: wrap;
 } 
 
 .button-nav {
@@ -492,16 +497,11 @@ img {
 
 /*Portfolio Cards*/
 
-/*.list-card {
+.list-card {
   display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
-}
-
-.row-cards {
-  width: calc((100% - 48px) / 3);
-  transition: var(--transition); 
+  gap: 48px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cards-wrap {

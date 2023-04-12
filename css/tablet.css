@@ -148,6 +148,23 @@
         width: 190px;
     }
 
+    /**-----------PORTFOLIO-------------**/ 
+
+    .list-button {
+        justify-content: center;
+    }
+
+    .list-card {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .row-cards {
+        width: calc((100% - 24px) / 2);
+        transition: var(--transition); 
+    }
+
     /**-----------FOOTER-------------**/ 
 
     .footer-content {
