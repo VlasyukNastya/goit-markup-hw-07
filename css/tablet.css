@@ -5,7 +5,12 @@
     /**-----------HEADER-------------**/
     .header-main {
         display: flex;
-        justify-content: space-between;
+    }
+
+    .header-nav {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
     }
 
     .header-logo {
@@ -145,7 +150,11 @@
     /**-----------CUSTOMERS-------------**/  
 
     .customers-icon-item {
-        width: 190px;
+        width: 168px;
+    }
+
+    .customers-list {
+        column-gap: 24px;
     }
 
     /**-----------PORTFOLIO-------------**/ 
@@ -182,6 +191,13 @@
         align-items: center;
         justify-content: flex-start;
     }
+
+    .footer-section {
+        margin-bottom: 0;
+      }
+      .footer-social-media {
+        margin-bottom: 0;
+      }
 
     .footer-title {
         justify-content: flex-start

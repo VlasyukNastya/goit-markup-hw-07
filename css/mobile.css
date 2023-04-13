@@ -1,15 +1,32 @@
-@media screen and (min-width: 426px) {
+@media screen and (min-width: 428px) {
     .container {
-        max-width: 426px;
+        max-width: 428px;
     }
     
     .header-logo {
         margin-right: auto;
     }
 
+    .mobile-menu-tel {
+        font-size: 35px;
+    }
+
     .menu-soc-list {
         gap: 64px;
     }
+
+    .modal{
+        min-width: 392px;
+    }
+
+    .text-conditions {
+        font-size: 12px;
+    }
+
+    .customers-icon-item {
+        width: 190px;
+    }
+
 
 }
 

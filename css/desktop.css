@@ -1,4 +1,4 @@
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
     }
@@ -180,10 +180,6 @@
         justify-content: center;
         align-items: center;
         gap: 24px;
-    }
-
-    .customers-icon-item {
-        width: 168px;
     }
 
     .customers-icon-item:hover, 
